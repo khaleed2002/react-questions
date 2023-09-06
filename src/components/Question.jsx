@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './Question.css'
-import { FiPlus, FiMinus } from 'react-icons/fi'
+import { AiOutlineMinusCircle, AiOutlinePlusCircle } from 'react-icons/Ai'
 const Question = ({ title, info }) => {
   const [toggleText, setToggleText] = useState(false)
   return (
@@ -8,14 +8,17 @@ const Question = ({ title, info }) => {
       <div className="question--title">
         <h5>{title}</h5>
         <button
-          className="btn"
           onClick={() =>
             setToggleText((text) => {
               return !text
             })
           }
         >
-          {toggleText ? <FiMinus /> : <FiPlus />}
+          {toggleText ? (
+            <AiOutlineMinusCircle className="sign" />
+          ) : (
+            <AiOutlinePlusCircle className="sign" />
+          )}
         </button>
       </div>
       {toggleText ? <p>{info}</p> : ''}

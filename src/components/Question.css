@@ -11,10 +11,27 @@ li div {
 .btn {
     border-radius: 50%;
     background-color: #164e63;
+
 }
 
 button {
+    background: none;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+    font: inherit;
+    margin: 0;
+    padding: 0;
+    text-align: inherit;
+    text-decoration: none;
+
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.sign {
+    width: 2rem;
+    height: 2rem;
+    color: #164e63;
 }

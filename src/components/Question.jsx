@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './Question.css'
-import { AiOutlineMinusCircle, AiOutlinePlusCircle } from 'react-icons/Ai'
+import { AiOutlineMinusCircle, AiOutlinePlusCircle } from 'react-icons/ai'
 const Question = ({ title, info }) => {
   const [toggleText, setToggleText] = useState(false)
   return (
